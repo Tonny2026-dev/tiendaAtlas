@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@babel/runtime": "^7.28.4",
+    "@babel/runtime": "^7.29.7",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
@@ -24,7 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d proyecto && ncp src/views proyecto/views && ncp src/frontend proyecto/frontend"
+    "build": "babel src -d proyecto && ncp src/views proyecto/views && ncp src/frontend proyecto/frontend",
+    "start": "node proyecto/index.js"
   },
   "keywords": [],
   "author": "",
