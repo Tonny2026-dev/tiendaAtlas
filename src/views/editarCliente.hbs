@@ -1,0 +1,100 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card card-body bg-dark p-4 text-white">
+
+                <h4>Actualizar Cliente</h4>
+
+                <form action="/clientes/{{clientes._id}}/update" method="POST">
+
+                    <div>
+                        <label for="nombre">Modificar nombre:</label>
+                        <input
+                            type="text"
+                            name="nombre"
+                            placeholder="Nombre"
+                            value="{{clientes.nombre}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="apellido">Modificar apellido:</label>
+                        <input
+                            type="text"
+                            name="apellido"
+                            placeholder="Apellido"
+                            value="{{clientes.apellido}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="correo">Modificar correo:</label>
+                        <input
+                            type="email"
+                            name="correo"
+                            placeholder="Correo"
+                            value="{{clientes.correo}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="telefono">Modificar teléfono:</label>
+                        <input
+                            type="text"
+                            name="telefono"
+                            placeholder="Teléfono"
+                            value="{{clientes.telefono}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="edad">Modificar edad:</label>
+                        <input
+                            type="number"
+                            name="edad"
+                            placeholder="Edad"
+                            value="{{clientes.edad}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="direccion">Modificar dirección:</label>
+                        <input
+                            type="text"
+                            name="direccion"
+                            placeholder="Dirección"
+                            value="{{clientes.direccion}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="ciudad">Modificar ciudad:</label>
+                        <input
+                            type="text"
+                            name="ciudad"
+                            placeholder="Ciudad"
+                            value="{{clientes.ciudad}}"
+                            class="form-control bg-dark text-white"
+                            required>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn btn-info mt-3">
+                        Actualizar Cliente
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
